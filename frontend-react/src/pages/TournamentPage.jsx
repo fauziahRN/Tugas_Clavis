@@ -320,7 +320,7 @@ function TournamentPage() {
               disabled={loading}
               style={{ width: '100%', padding: '13px', background: '#7C3AED', color: 'white', fontSize: '16px', fontWeight: '700', borderRadius: '8px', border: 'none', cursor: 'pointer', marginTop: '4px' }}
             >
-              {loading ? 'Loading...' : 'Daftarkan Tim'}
+              {loading ? 'Mendaftarkan Tim... (mohon tunggu)' : 'Daftarkan Tim'}
             </button>
 
             {submitError && <span style={{ ...sError, marginTop: '8px' }}>{submitError}</span>}

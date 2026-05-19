@@ -177,7 +177,7 @@ function LoginPage() {
           </div>
 
           <button type="submit" className="button-primary" disabled={loading}>
-            {loading ? 'Loading...' : 'Masuk'}
+            {loading ? 'Masuk... (mohon tunggu)' : 'Masuk'}
           </button>
 
           {submitError && <div className="error-text submit-error">{submitError}</div>}

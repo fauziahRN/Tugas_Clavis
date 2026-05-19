@@ -128,7 +128,7 @@ function RegisterPage() {
           />
 
           <button type="submit" className="button-primary" disabled={loading}>
-            {loading ? 'Loading...' : 'Daftar'}
+            {loading ? 'Mendaftar... (mohon tunggu)' : 'Daftar'}
           </button>
 
           {submitError && <div className="error-text submit-error">{submitError}</div>}
