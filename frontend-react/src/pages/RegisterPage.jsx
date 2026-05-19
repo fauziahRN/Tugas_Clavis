@@ -109,44 +109,47 @@ function RegisterPage() {
             placeholder="Masukkan email"
             error={errors.email}
           />
-          <div className="field-group" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-            <label htmlFor="password" className="label">
+          <div style={{ marginBottom: '20px' }}>
+            <label style={{
+              fontSize: '14px',
+              fontWeight: '600',
+              color: '#374151',
+              display: 'block',
+              marginBottom: '6px'
+            }}>
               Kata Sandi
             </label>
-            <input
-              id="password"
-              type={showPassword ? 'text' : 'password'}
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="Masukkan kata sandi"
-              className="input"
-              style={{
-                width: '100%',
-                padding: '10px 42px 10px 14px',
-                border: '1px solid #D1D5DB',
-                borderRadius: '8px',
-                fontSize: '14px',
-                boxSizing: 'border-box',
-                outline: 'none'
-              }}
-            />
-            <span
-              onClick={() => setShowPassword(!showPassword)}
-              style={{
-                position: 'absolute',
-                right: '12px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#9CA3AF',
-                lineHeight: '1',
-                padding: '0',
-                margin: '0'
-              }}
-            >
+            <div style={{ position: 'relative' }}>
+              <input
+                id="password"
+                type={showPassword ? 'text' : 'password'}
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                placeholder="Masukkan kata sandi"
+                style={{
+                  width: '100%',
+                  padding: '10px 42px 10px 14px',
+                  border: '1px solid #D1D5DB',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  boxSizing: 'border-box',
+                  outline: 'none'
+                }}
+              />
+              <span
+                onClick={() => setShowPassword(!showPassword)}
+                style={{
+                  position: 'absolute',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#9CA3AF'
+                }}
+              >
               {showPassword ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 24 24" fill="none" stroke="#6B7280"
@@ -165,6 +168,7 @@ function RegisterPage() {
               )}
             </span>
             {errors.password && <div className="error-text">{errors.password}</div>}
+          </div>
           </div>
           <InputField
             label="Nomor Telepon"
