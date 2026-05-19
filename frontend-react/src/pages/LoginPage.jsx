@@ -148,7 +148,7 @@ function LoginPage() {
             placeholder="Masukkan username"
             error={errors.username}
           />
-          <div className="field-group" style={{ position: 'relative' }}>
+          <div className="field-group" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
             <label htmlFor="password" className="label">
               Kata Sandi
             </label>
@@ -159,7 +159,15 @@ function LoginPage() {
               onChange={(event) => setPassword(event.target.value)}
               placeholder="Masukkan kata sandi"
               className="input"
-              style={{ padding: '10px 40px 10px 14px' }}
+              style={{
+                width: '100%',
+                padding: '10px 42px 10px 14px',
+                border: '1px solid #D1D5DB',
+                borderRadius: '8px',
+                fontSize: '14px',
+                boxSizing: 'border-box',
+                outline: 'none'
+              }}
             />
             <span
               onClick={() => setShowPassword(!showPassword)}
@@ -171,6 +179,11 @@ function LoginPage() {
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent: 'center',
+                color: '#9CA3AF',
+                lineHeight: '1',
+                padding: '0',
+                margin: '0'
               }}
             >
               {showPassword ? (

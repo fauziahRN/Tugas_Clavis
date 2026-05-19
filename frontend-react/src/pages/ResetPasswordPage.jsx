@@ -81,7 +81,7 @@ export default function ResetPasswordPage() {
           </p>
         )}
 
-        <div style={{ marginBottom: '20px', position: 'relative' }}>
+        <div style={{ marginBottom: '20px', position: 'relative', display: 'flex', alignItems: 'center' }}>
           <label style={{ fontSize: '14px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>
             Password Baru
           </label>
@@ -89,18 +89,31 @@ export default function ResetPasswordPage() {
             type={showPassword ? 'text' : 'password'}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            style={{ width: '100%', padding: '10px 40px 10px 14px', border: '1px solid #D1D5DB', borderRadius: '8px', fontSize: '14px', boxSizing: 'border-box', outline: 'none' }}
+            style={{
+              width: '100%',
+              padding: '10px 42px 10px 14px',
+              border: '1px solid #D1D5DB',
+              borderRadius: '8px',
+              fontSize: '14px',
+              boxSizing: 'border-box',
+              outline: 'none'
+            }}
           />
           <span
             onClick={() => setShowPassword(!showPassword)}
             style={{
               position: 'absolute',
               right: '12px',
-              top: '42px',
+              top: '50%',
               transform: 'translateY(-50%)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
+              justifyContent: 'center',
+              color: '#9CA3AF',
+              lineHeight: '1',
+              padding: '0',
+              margin: '0'
             }}
           >
             {showPassword ? (
@@ -127,7 +140,7 @@ export default function ResetPasswordPage() {
           )}
         </div>
 
-        <div style={{ marginBottom: '24px', position: 'relative' }}>
+        <div style={{ marginBottom: '24px', position: 'relative', display: 'flex', alignItems: 'center' }}>
           <label style={{ fontSize: '14px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>
             Konfirmasi Password
           </label>
@@ -135,18 +148,31 @@ export default function ResetPasswordPage() {
             type={showConfirmPassword ? 'text' : 'password'}
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            style={{ width: '100%', padding: '10px 40px 10px 14px', border: '1px solid #D1D5DB', borderRadius: '8px', fontSize: '14px', boxSizing: 'border-box', outline: 'none' }}
+            style={{
+              width: '100%',
+              padding: '10px 42px 10px 14px',
+              border: '1px solid #D1D5DB',
+              borderRadius: '8px',
+              fontSize: '14px',
+              boxSizing: 'border-box',
+              outline: 'none'
+            }}
           />
           <span
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             style={{
               position: 'absolute',
               right: '12px',
-              top: '42px',
+              top: '50%',
               transform: 'translateY(-50%)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
+              justifyContent: 'center',
+              color: '#9CA3AF',
+              lineHeight: '1',
+              padding: '0',
+              margin: '0'
             }}
           >
             {showConfirmPassword ? (
