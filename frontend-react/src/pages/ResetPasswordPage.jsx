@@ -81,17 +81,18 @@ export default function ResetPasswordPage() {
           </p>
         )}
 
-        <div style={{ marginBottom: '20px' }}>
+        <div style={{ marginBottom: '20px', display: 'block' }}>
           <label style={{
             fontSize: '14px',
             fontWeight: '600',
             color: '#374151',
             display: 'block',
-            marginBottom: '6px'
+            marginBottom: '6px',
+            width: '100%'
           }}>
             Password Baru
           </label>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative', width: '100%' }}>
             <input
               type={showPassword ? 'text' : 'password'}
               value={password}
@@ -144,17 +145,18 @@ export default function ResetPasswordPage() {
           )}
         </div>
 
-        <div style={{ marginBottom: '24px' }}>
+        <div style={{ marginBottom: '24px', display: 'block' }}>
           <label style={{
             fontSize: '14px',
             fontWeight: '600',
             color: '#374151',
             display: 'block',
-            marginBottom: '6px'
+            marginBottom: '6px',
+            width: '100%'
           }}>
             Konfirmasi Password
           </label>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative', width: '100%' }}>
             <input
               type={showConfirmPassword ? 'text' : 'password'}
               value={confirmPassword}
