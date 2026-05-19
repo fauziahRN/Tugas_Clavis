@@ -99,7 +99,8 @@ class AuthController extends Controller
             'created_at' => now(),
         ]);
 
-        $resetUrl = 'http://localhost:5173/reset-password?token='
+        $resetUrl = env('FRONTEND_URL', 'http://localhost:5173')
+                    . '/reset-password?token='
                     . $token
                     . '&email='
                     . urlencode($request->email);
