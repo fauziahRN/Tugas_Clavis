@@ -81,41 +81,45 @@ export default function ResetPasswordPage() {
           </p>
         )}
 
-        <div style={{ marginBottom: '20px', position: 'relative', display: 'flex', alignItems: 'center' }}>
-          <label style={{ fontSize: '14px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <label style={{
+            fontSize: '14px',
+            fontWeight: '600',
+            color: '#374151',
+            display: 'block',
+            marginBottom: '6px'
+          }}>
             Password Baru
           </label>
-          <input
-            type={showPassword ? 'text' : 'password'}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            style={{
-              width: '100%',
-              padding: '10px 42px 10px 14px',
-              border: '1px solid #D1D5DB',
-              borderRadius: '8px',
-              fontSize: '14px',
-              boxSizing: 'border-box',
-              outline: 'none'
-            }}
-          />
-          <span
-            onClick={() => setShowPassword(!showPassword)}
-            style={{
-              position: 'absolute',
-              right: '12px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#9CA3AF',
-              lineHeight: '1',
-              padding: '0',
-              margin: '0'
-            }}
-          >
+          <div style={{ position: 'relative' }}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '10px 42px 10px 14px',
+                border: '1px solid #D1D5DB',
+                borderRadius: '8px',
+                fontSize: '14px',
+                boxSizing: 'border-box',
+                outline: 'none'
+              }}
+            />
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              style={{
+                position: 'absolute',
+                right: '12px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#9CA3AF'
+              }}
+            >
             {showPassword ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                    viewBox="0 0 24 24" fill="none" stroke="#6B7280"
@@ -140,41 +144,45 @@ export default function ResetPasswordPage() {
           )}
         </div>
 
-        <div style={{ marginBottom: '24px', position: 'relative', display: 'flex', alignItems: 'center' }}>
-          <label style={{ fontSize: '14px', fontWeight: '600', color: '#374151', display: 'block', marginBottom: '6px' }}>
+        <div style={{ marginBottom: '24px' }}>
+          <label style={{
+            fontSize: '14px',
+            fontWeight: '600',
+            color: '#374151',
+            display: 'block',
+            marginBottom: '6px'
+          }}>
             Konfirmasi Password
           </label>
-          <input
-            type={showConfirmPassword ? 'text' : 'password'}
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            style={{
-              width: '100%',
-              padding: '10px 42px 10px 14px',
-              border: '1px solid #D1D5DB',
-              borderRadius: '8px',
-              fontSize: '14px',
-              boxSizing: 'border-box',
-              outline: 'none'
-            }}
-          />
-          <span
-            onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-            style={{
-              position: 'absolute',
-              right: '12px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#9CA3AF',
-              lineHeight: '1',
-              padding: '0',
-              margin: '0'
-            }}
-          >
+          <div style={{ position: 'relative' }}>
+            <input
+              type={showConfirmPassword ? 'text' : 'password'}
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '10px 42px 10px 14px',
+                border: '1px solid #D1D5DB',
+                borderRadius: '8px',
+                fontSize: '14px',
+                boxSizing: 'border-box',
+                outline: 'none'
+              }}
+            />
+            <span
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+              style={{
+                position: 'absolute',
+                right: '12px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#9CA3AF'
+              }}
+            >
             {showConfirmPassword ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                    viewBox="0 0 24 24" fill="none" stroke="#6B7280"
